@@ -20,5 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('dogs.urls')),
+     path('', include('dogs.urls')), #make root show dogs app because I could not see anything
 ]
 
